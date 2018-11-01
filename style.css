@@ -4,6 +4,9 @@ body {
   padding: 20px;
   background-color: #ffb021;
   font-family: "Open Sans", sans-serif; }
+  @media (min-width: 50em) {
+    body {
+      font-size: 1.4rem; } }
 
 abbr {
   border-bottom: none; }
@@ -23,6 +26,11 @@ header {
 
 .summary > p {
   text-align: center; }
+  @media (min-width: 50em) {
+    .summary > p {
+      width: 50%;
+      font-weight: bold;
+      text-align: left; } }
 
 .preamble, .participation, .requirements {
   text-align: center;
