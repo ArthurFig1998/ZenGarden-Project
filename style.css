@@ -22,7 +22,11 @@ header {
   @media (min-width: 50em) {
     header {
       text-align: left;
-      font-size: 1.6rem; } }
+      font-size: 1.6rem;
+      background-image: url("assets/faveicon.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; } }
 
 .summary > p {
   text-align: center; }
