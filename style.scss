@@ -31,9 +31,12 @@ header {
 	text-align: center;
 	color: $tertiary;
 	font-weight: bold;
+	// background-image: url(assets/faveicon.png);
 	@include breakpoint(large) {
 		text-align: left;
 		font-size: 1.6rem;
+		// background-image: url(assets/faveicon-large.png);
+		// background-position: right;
 	}
 }
 
