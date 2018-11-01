@@ -26,7 +26,7 @@ header {
       background-image: url("assets/faveicon.png");
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-position: center; } }
+      background-position: 75% 10%; } }
 
 .summary > p {
   text-align: center; }
