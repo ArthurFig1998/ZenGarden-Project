@@ -70,6 +70,12 @@ header {
     }
 }
 
+.summary < p
+{
+   padding: 150px;
+    margin: 40px;
+}
+
 @-moz-keyframes spin {
     100% {
         -moz-transform: rotate(360deg);
