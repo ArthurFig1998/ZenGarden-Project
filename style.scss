@@ -41,6 +41,7 @@ h3 {
 }
 
 header {
+<<<<<<< HEAD
     text-align: center;
     color: $tertiary;
     font-weight: bold;
@@ -94,6 +95,40 @@ header {
         transform: rotate(360deg);
     }
 }
+=======
+	text-align: center;
+	color: $tertiary;
+	font-weight: bold;
+	position: relative;
+	border: 1px solid;
+	@include breakpoint(large) {
+		&::after{
+			border: 1px solid;
+			content: url('assets/faveicon.png');
+			background-image: url('assets/faveicon.png');
+    		background-repeat: no-repeat;
+			background-attachment: fixed;
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: auto;
+			height: auto;
+			-webkit-animation:spin 4s linear infinite;
+			-moz-animation:spin 4s linear infinite;
+			animation:spin 4s linear infinite;
+			transform-origin: center;
+		}
+		text-align: left;
+		font-size: 1.6rem;
+		
+	}
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+>>>>>>> 6b451b4cc899798c4fa9b35e902ca3be7ea5d82c
 
 .summary {
     font-style: italic;
