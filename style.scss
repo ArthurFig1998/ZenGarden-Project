@@ -15,8 +15,7 @@ body {
 	margin: 0 auto;
 	padding: 20px;
 	background-color: $secondary;
-	font-size: 1.4rem;
-  	font-family: "Open Sans", sans-serif;
+	  font-family: "Open Sans", sans-serif;
 }
 
 abbr {
@@ -32,6 +31,10 @@ header {
 	text-align: center;
 	color: $tertiary;
 	font-weight: bold;
+	@include breakpoint(large) {
+		text-align: left;
+		font-size: 1.6rem;
+	}
 }
 
 .summary > p {

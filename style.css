@@ -3,7 +3,6 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #ffb021;
-  font-size: 1.4rem;
   font-family: "Open Sans", sans-serif; }
 
 abbr {
@@ -17,6 +16,10 @@ header {
   text-align: center;
   color: #f0f0df;
   font-weight: bold; }
+  @media (min-width: 50em) {
+    header {
+      text-align: left;
+      font-size: 1.6rem; } }
 
 .summary > p {
   text-align: center; }
