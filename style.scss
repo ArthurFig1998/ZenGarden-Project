@@ -52,6 +52,13 @@ header {
 	}
 }
 
+.preamble {
+	@include breakpoint(large) {
+		grid-column: 1/3;
+		color: pink;
+	}
+}
+
 .preamble, .participation, .requirements {
 	text-align: center;
 	color: $tertiary;
