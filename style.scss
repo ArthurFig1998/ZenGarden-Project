@@ -9,15 +9,28 @@ $break-large: 50em;
     }
 }
 
-$primary: rgb(63,
-88,
-102);
-$secondary: rgb(255,
-176,
-33);
-$tertiary: rgb(240,
-240,
-223);
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+$primary: rgb(63, 88, 102);
+$secondary: rgb(255, 176, 33);
+$tertiary: rgb(240, 240, 223);
 
 body {
     margin: 0 auto;
@@ -67,25 +80,6 @@ header {
         text-align: left;
         font-size: 1.6rem;
 
-    }
-}
-
-@-moz-keyframes spin {
-    100% {
-        -moz-transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
     }
 }
 
