@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Pacifico");
+@import @import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600|Pacifico');
 $break-large: 50em;
 
 @mixin breakpoint($break) {
@@ -28,9 +28,15 @@ $break-large: 50em;
     }
 }
 
-$primary: rgb(63, 88, 102);
-$secondary: rgb(255, 176, 33);
-$tertiary: rgb(240, 240, 223);
+$primary: rgb(63,
+88,
+102);
+$secondary: rgb(255,
+176,
+33);
+$tertiary: rgb(240,
+240,
+223);
 
 body {
     margin: 0 auto;
@@ -38,7 +44,7 @@ body {
     background-color: $secondary;
     font-family: "Open Sans", sans-serif;
     @include breakpoint(large) {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
@@ -46,7 +52,9 @@ abbr {
     border-bottom: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Pacifico", cursive;
     font-weight: 300;
 }
@@ -60,6 +68,7 @@ header {
         grid-row: 1/4;
         text-align: left;
         font-size: 1.6rem;
+        line-height: 1.2rem;
     }
 }
 
@@ -82,12 +91,11 @@ header {
             -moz-animation: spin 4s linear infinite;
             animation: spin 4s linear infinite;
             transform-origin: center;
-        } 
+        }
     }
 }
 
 .summary {
-    font-style: italic;
     @include breakpoint(large) {
         grid-column: 1/8;
         grid-row: 4/6;
@@ -98,37 +106,41 @@ header {
     text-align: center;
     @include breakpoint(large) {
         width: 50%;
-        font-weight: bold;
-        text-align: left;
+        font-weight: 600;
+        text-align: center;
     }
 }
 
 .preamble {
+    line-height: 1.8rem;
     @include breakpoint(large) {
-        grid-column: 4/8;
-        grid-row: 6/8;
+        grid-column: 7/8;
+        grid-row: 7/8;
         position: relative;
+    }
+    h3 {
+        text-align: center;
     }
 }
 
 .preamble,
 .participation,
 .requirements {
-    text-align: center;
+        text-align: center;
     color: $tertiary;
     background-color: $primary;
     border-radius: 5px 5px 30px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    padding: 5px;
+    padding: 2rem;
 }
 
 .main {
     @include breakpoint(large) {
         display: grid;
         grid-template-rows: repeat(5, auto);
-        grid-template-columns: repeat(2, auto); 
+        grid-template-columns: repeat(2, auto);
     }
 }
 
@@ -209,5 +221,3 @@ footer {
 .zen-resources {
     grid-row: 2/3;
 }
-
-
