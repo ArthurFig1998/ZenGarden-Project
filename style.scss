@@ -208,9 +208,6 @@ footer {
 .design-archives,
 .zen-resources {
     grid-row: 2/3;
-    @include breakpoint(large) {
-
-    }
 }
 
 
