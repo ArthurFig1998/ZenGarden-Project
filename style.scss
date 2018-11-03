@@ -153,8 +153,6 @@ header {
 }
 
 .participation {
-    line-height: 1.6rem;
-    background-color: beige;
     @include breakpoint(large) {
         grid-row: 2/3;
         grid-column: 2/3;
