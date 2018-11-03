@@ -58,10 +58,11 @@ header {
     color: $tertiary;
     font-weight: bold;
     position: relative;
-    
+    @include breakpoint(large) {
+        grid-column: 1/2;
+        grid-row: 1/2;
         text-align: left;
         font-size: 1.6rem;
-
     }
 }
 
@@ -69,31 +70,23 @@ header {
     @include breakpoint(large) {
         display: grid;
         grid-template-rows: auto auto auto;
-        grid-template-columns: 50% 50%; 
-    }
-}
-
-header {
-    @include breakpoint(large) {
-        grid-column: 1/2;
-        grid-row: 1/2;
+        grid-template-columns: 50% 50%;
         &::after {
             border: 1px solid;
             border-radius: 40%;
             content: url('');
             background-repeat: no-repeat;
             background-attachment: fixed;
-            display: inline-block;
-            position: absolute;
-            top: 50px;
-            right: 100px;
+            top: 100px;
+            grid-column: 2/3;
+            grid-row: 1/4;
             width: 250px;
             height: 250px;
             -webkit-animation: spin 4s linear infinite;
             -moz-animation: spin 4s linear infinite;
             animation: spin 4s linear infinite;
             transform-origin: center;
-        }
+        } 
     }
 }
 
