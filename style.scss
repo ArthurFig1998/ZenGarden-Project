@@ -96,6 +96,7 @@ header {
 }
 
 .summary {
+    font-style: italic;
     @include breakpoint(large) {
         grid-column: 1/8;
         grid-row: 4/6;
@@ -106,8 +107,8 @@ header {
     text-align: center;
     @include breakpoint(large) {
         width: 50%;
-        font-weight: 600;
-        text-align: center;
+        font-weight: lighter;
+        text-align: left;
     }
 }
 
@@ -126,7 +127,7 @@ header {
 .preamble,
 .participation,
 .requirements {
-        text-align: center;
+    text-align: center;
     color: $tertiary;
     background-color: $primary;
     border-radius: 5px 5px 30px;
@@ -152,6 +153,8 @@ header {
 }
 
 .participation {
+    line-height: 1.6rem;
+    background-color: beige;
     @include breakpoint(large) {
         grid-row: 2/3;
         grid-column: 2/3;
@@ -166,6 +169,7 @@ header {
 }
 
 .requirements {
+    line-height: 1.8rem;
     @include breakpoint(large) {
         grid-row: 4/5;
         grid-column: 1/3;
