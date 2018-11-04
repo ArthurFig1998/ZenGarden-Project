@@ -61,7 +61,7 @@ header {
       content: url("");
       background-repeat: no-repeat;
       background-attachment: fixed;
-      grid-column: 5/7;
+      grid-column: 6/7;
       grid-row: 3/5;
       width: 250px;
       height: 250px;
@@ -90,6 +90,7 @@ header {
       font-weight: bold;
       text-align: left; } }
 
+<<<<<<< HEAD
 /* line 116, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .preamble {
   line-height: 1.8rem; }
@@ -102,6 +103,13 @@ header {
   /* line 123, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .preamble h3 {
     text-align: center; }
+=======
+@media (min-width: 50em) {
+  .preamble {
+    grid-column: 1/8;
+    grid-row: 6/8;
+    position: relative; } }
+>>>>>>> fca4cb110e86a372660622a036534bc464eebbec
 
 /* line 128, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .preamble,
@@ -127,19 +135,19 @@ header {
   /* line 149, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .explanation {
     grid-row: 1/2;
-    grid-column: 1/2; } }
+    grid-column: 2/3; } }
 
 @media (min-width: 50em) {
   /* line 156, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .participation {
     grid-row: 2/3;
-    grid-column: 2/3; } }
+    grid-column: 1/2; } }
 
 @media (min-width: 50em) {
   /* line 163, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .benefits {
     grid-row: 3/4;
-    grid-column: 1/2; } }
+    grid-column: 2/3; } }
 
 @media (min-width: 50em) {
   /* line 170, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
