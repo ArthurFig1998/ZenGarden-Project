@@ -170,7 +170,7 @@ header {
     @include breakpoint(large) {
         grid-row: 1/2;
         grid-column: 2/3;
-        animation: shrink-1 2s infinite;
+        animation: shrink-1 2s ease-out;
     }
 }
 
@@ -178,7 +178,7 @@ header {
     @include breakpoint(large) {
         grid-row: 2/3;
         grid-column: 1/2;
-        animation: shrink-2 2s infinite;
+        animation: shrink-2 2s ease-out;
     }
 }
 
@@ -186,7 +186,7 @@ header {
     @include breakpoint(large) {
         grid-row: 3/4;
         grid-column: 2/3;
-        animation: shrink-1 2s infinite;
+        animation: shrink-1 2s ease-out;
     }
 }
 
