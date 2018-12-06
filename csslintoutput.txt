@@ -1,0 +1,23 @@
+
+
+csslint: There are 4 problems in C:\Users\arthu\Desktop\BYU-Idaho2018\Fall2018\WDD331\ZenGarden-Project\style.css.
+
+style.css
+1: warning at line 1, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600|Pacifico");
+
+style.css
+2: warning at line 4, col 5
+Missing standard property 'transform' to go along with '-moz-transform'.
+    -moz-transform: rotate(360deg); } }
+
+style.css
+3: warning at line 7, col 5
+Missing standard property 'transform' to go along with '-webkit-transform'.
+    -webkit-transform: rotate(360deg); } }
+
+style.css
+4: error at line undefined, col undefined
+Fatal error, cannot continue: Cannot read property 'push' of undefined
+undefined
