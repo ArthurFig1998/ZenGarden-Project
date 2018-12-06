@@ -16,7 +16,7 @@
 body {
   margin: 0 auto;
   padding: 20px;
-  background-image: linear-gradient(#301B3E, #0E0051);
+  background-image: linear-gradient(to bottom, #16395C, #071827, #05111C);
   font-family: "Open Sans", sans-serif; }
   @media (min-width: 50em) {
     /* line 42, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
