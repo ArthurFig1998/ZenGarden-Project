@@ -2,36 +2,45 @@
 @-moz-keyframes spin {
   100% {
     -moz-transform: rotate(360deg); } }
+
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg); } }
+
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+
+/* line 42, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 body {
   margin: 0 auto;
   padding: 20px;
   background-image: linear-gradient(to bottom, #16395C, #071827, #05111C);
   font-family: "Open Sans", sans-serif; }
   @media (min-width: 50em) {
+    /* line 42, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     body {
       font-size: 1rem; } }
 
+/* line 52, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 abbr {
   border-bottom: none; }
 
+/* line 56, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 h1,
 h2,
 h3 {
   font-family: "Pacifico", cursive;
   font-weight: 300; }
 
+/* line 63, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 header {
   text-align: center;
   color: #f0f0df;
   font-weight: bold; }
   @media (min-width: 50em) {
+    /* line 63, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     header {
       grid-column: 1/4;
       grid-row: 1/4;
@@ -40,10 +49,12 @@ header {
       line-height: 1.2rem; } }
 
 @media (min-width: 50em) {
+  /* line 76, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .intro {
     display: grid;
     grid-template-rows: repeat(7, auto);
     grid-template-columns: repeat(7, auto); }
+    /* line 81, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .intro::after {
       display: inline-block;
       width: 250px;
@@ -55,31 +66,39 @@ header {
       grid-row: 3/5;
       transform-origin: center; } }
 
+/* line 101, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .summary {
   font-style: italic; }
   @media (min-width: 50em) {
+    /* line 101, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .summary {
       grid-column: 1/8;
       grid-row: 4/6; } }
 
+/* line 109, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .summary > p {
   text-align: center; }
   @media (min-width: 50em) {
+    /* line 109, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .summary > p {
       width: 50%;
       font-weight: light;
       text-align: left; } }
 
+/* line 118, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .preamble {
   line-height: 1.8rem; }
   @media (min-width: 50em) {
+    /* line 118, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .preamble {
       grid-column: 1/8;
       grid-row: 6/8;
       position: relative; } }
+  /* line 125, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .preamble h3 {
     text-align: center; }
 
+/* line 130, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .preamble,
 .participation,
 .requirements {
@@ -92,9 +111,11 @@ header {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 2rem; }
 
+/* line 143, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .main {
   line-height: 1.8rem; }
   @media (min-width: 50em) {
+    /* line 143, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .main {
       display: grid;
       grid-template-rows: repeat(5, auto);
@@ -105,59 +126,72 @@ header {
     grid-column: 1/3; }
   100% {
     grid-column: 2/3; } }
+
 @keyframes shrink-2 {
   0% {
     grid-column: 1/3; }
   100% {
     grid-column: 1/2; } }
+
 @media (min-width: 50em) {
+  /* line 170, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .explanation {
     grid-row: 1/2;
     grid-column: 2/3;
     animation: shrink-1 2s ease-out; }
+    /* line 175, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .explanation::after {
       content: '';
       width: 250px;
       height: 250px;
       grid-column: 1/2;
-      grid-row: 1/2; } }
+      border: 1px solid white; } }
 
 @media (min-width: 50em) {
+  /* line 185, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .participation {
     grid-row: 2/3;
     grid-column: 1/2;
     animation: shrink-2 2s ease-out; } }
 
 @media (min-width: 50em) {
+  /* line 193, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   .benefits {
     grid-row: 3/4;
     grid-column: 2/3;
     animation: shrink-1 2s ease-out; } }
 
+/* line 201, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .requirements {
   line-height: 1.8rem; }
   @media (min-width: 50em) {
+    /* line 201, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .requirements {
       grid-row: 4/5;
       grid-column: 1/3; } }
 
 @media (min-width: 50em) {
+  /* line 209, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
   footer {
     grid-column: 1/3;
     grid-row: 5/6;
     text-align: center; }
+    /* line 214, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     footer::before {
       content: '\A';
       white-space: pre; } }
 
+/* line 221, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto; }
   @media (min-width: 50em) {
+    /* line 221, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .wrapper {
       grid-template-columns: 25% 25% 25% 25%;
       position: relative; }
+      /* line 228, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
       .wrapper::after {
         content: url("");
         background-repeat: no-repeat;
@@ -170,15 +204,18 @@ header {
         width: 45%;
         border: 1px solid; } }
 
+/* line 243, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .design-selection {
   grid-row: 1/2;
   grid-column: 1/3;
   width: 100%; }
   @media (min-width: 50em) {
+    /* line 243, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
     .design-selection {
       grid-column: 1/3;
       grid-row: 1/2; } }
 
+/* line 254, /Users/a_veites/Desktop/2018/fall-2018/advanced_css/zen-garden/ZenGarden-Project/style.scss */
 .design-archives,
 .zen-resources {
   grid-row: 2/3; }
